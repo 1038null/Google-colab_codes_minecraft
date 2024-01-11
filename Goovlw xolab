@@ -1,0 +1,338 @@
+{
+  "células": [
+    {
+      "archivos adjuntos": {},
+      "cell_type": "rebaja",
+      "metadatos": {
+        "id": "ZktjRJuZp1h6"
+      },
+      "fuente": [
+        "\norte",
+        "```\n",
+        "â–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ– ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•— â–ˆâ– ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— \n",
+        "â–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ•'â–ˆâ–ˆâ•'â–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•'â– ˆâ–ˆâ•”â• â• â• â• â• â–ˆâ–ˆâ•”â• â• â• â• â• â–ˆâ–ˆâ•”â• â• â• â–ˆâ–ˆâ •—â–ˆâ–ˆâ•' â–ˆâ–ˆâ•”â• â• â–ˆâ–ˆâ•—â–ˆâ–ˆâ•”â• â• â–ˆâ–ˆâ•—\n",
+        "â–ˆâ–ˆâ•”â–ˆâ–ˆâ–ˆâ–ˆâ•”â–ˆâ–ˆâ•'â–ˆâ–ˆâ•'â–ˆâ–ˆâ•”â–ˆâ–ˆâ•— â–ˆâ –ˆâ•'â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•' â–ˆâ–ˆâ•' â–ˆâ–ˆâ•'â–ˆâ–ˆâ•' â–ˆâ–ˆâ –ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•'â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â• \n",
+        "â–ˆâ–ˆâ•'â•šâ–ˆâ–ˆâ•”â• â–ˆâ–ˆâ•'â–ˆâ–ˆâ•'â–ˆâ–ˆâ•'â•šâ–ˆâ–ˆâ•—â –ˆâ–ˆâ•'â–ˆâ–ˆâ•”â• â• â• â–ˆâ–ˆâ•' â–ˆâ–ˆâ•' â–ˆâ–ˆâ•'â–ˆâ–ˆâ•' â–ˆâ –ˆâ•”â• â• â–ˆâ–ˆâ•'â–ˆâ–ˆâ•”â• â• â–ˆâ–ˆâ•—\n",
+        "â–ˆâ–ˆâ•' â•šâ• â• â–ˆâ–ˆâ•'â–ˆâ–ˆâ•'â–ˆâ–ˆâ•' â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•'â– ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â•šâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â•šâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â • â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•' â–ˆâ–ˆâ•'â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â• \ norte",
+        "â•šâ• â• â•šâ• â• â•šâ• â• â•šâ• â• â•šâ• â• â• â• â•šâ• â• â• â• â• â• â • â•šâ• â• â• â• â• â• â•šâ• â• â• â• â• â• â•šâ• â• â• â• â• â• â• â•šâ• â • â•šâ• â• â•šâ• â• â• â• â• â• \n",
+        "```\n",
+        "**¡Ejecute un servidor de Minecraft en Google Colab!**\n",
+        "\norte",
+        "---\norte",
+        "\norte",
+        "El script siguiente ejecutará su servidor. Primero tendrá que crear un servidor para poder usarlo; no se preocupe, los scripts siguientes harán la mayor parte del trabajo por usted. Es posible que también desee cambiar el región predeterminada a su región, consulte a continuación."
+      ]
+    },
+    {
+      "tipo_celda": "código",
+      "recuento_ejecución": nulo,
+      "metadatos": {
+        "id": "lqtMoYg0dUmu"
+      },
+      "salidas": [],
+      "fuente": [
+        "importar sistema operativo\n",
+        "importar re\n",
+        "importar json\n",
+        "\norte",
+        "# Actualizar las listas de paquetes\n",
+        "!sudo apt update &>/dev/null && echo \"apt cache actualizado correctamente\" || echo \"apt cache update falló, es posible que recibas paquetes obsoletos\"\n",
+        "# Instalar OpenJDK 17\n",
+        "# !wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -\n",
+        "# !sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/ &>/dev/null || echo \"Error al agregar el repositorio. Aún así se puede ignorar si se instala openjdk17.\"\n",
+        "!sudo apt-get install openjdk-17-jre-headless &>/dev/null && echo \"¡Sí! Openjdk17 se ha instalado correctamente.\" || echo \"Error al instalar OpenJdk17.\"\n",
+        "#Realizar verificación de versión de Java\n",
+        "java_ver = !java -versión 2>&1 | awk -F[\\\"\\.] -v OFS=. 'NR==1{imprimir $2}'\n",
+        "si java_ver[0] == \"17\" :\n",
+        " print(\"Openjdk17 está funcionando correctamente, ya está listo.\")\n",
+        "de lo contrario:\n",
+        " print(\"Openjdk17 no parece estar instalado o no funciona, recurriendo a java\", java_ver[0], \". Es posible que experimentes un rendimiento reducido. Es posible que Minecraft 1.17 y versiones posteriores no se inicien.\ ")\norte",
+        "\norte",
+        "# Montar Google Drive\n",
+        "desde la unidad de importación google.colab\n",
+        "drive.mount('/content/drive')\n",
+        "# Cambiar directorio a la carpeta del servidor de Minecraft en Google Drive\n",
+        "%cd \"/content/drive/Mi unidad/Minecraft-server\"\n",
+        "!ls #lista el contenido del directorio (para verificar que se cambió el directorio de trabajo)\n",
+        "\norte",
+        "# Importar archivo de configuración.\n",
+        "si os.path.isfile(\"colabconfig.json\"):\n",
+        " colabconfig = json.load(open(\"colabconfig.json\"))\n",
+        "de lo contrario:\n",
+        " colabconfig = {\"server_type\": \"generic\"} # usando el valor predeterminado, si la configuración no existe.\n",
+        " json.dump(colabconfig, open(\"colabconfig.json\",'w'))\n",
+        "\norte",
+        "# Nombres de archivos jar del servidor.\n",
+        "jar_list = {'paper': 'server.jar', 'fabric': 'fabric-server-launch.jar', 'generic': 'server.jar', 'forge': 'server.jar'}\n ",
+        "jar_name = jar_list[colabconfig[\"server_type\"]]\n",
+        "\norte",
+        "# argumentos Java.\n",
+        "if colabconfig[\"server_type\"] == \"paper\":\n",
+        " server_flags = \"-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX :G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+ PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true\"\n",
+        "de lo contrario:\n",
+        " server_flags = \"\" # Las banderas de Aiker pueden afectar negativamente el rendimiento en servidores que no son de papel.\n",
+        "asignación_memoria = \"-Xmx6144M -Xms6144M\"\n",
+        "\norte",
+        "# Elige el servicio Tunnle que deseas utilizar\n",
+        "# Opciones disponibles: ngrok, argo, playit\n",
+        "tunnel_service = \"argo\"\n",
+        "print(\"Procedimiento a utilizar\", Tunnel_service)\n",
+        "\n",
+        "\norte",
+        "si Tunnel_Service == \"ngrok\":\n",
+        " !pip -q instalar pyngrok\n",
+        "de pyngrok import conf, ngrok\n",
+        "\n",
+        " # Solicite el token de autenticación de ngrok\n",
+        " print(\"Obtenga su token de autenticación de https://dashboard.ngrok.com/auth\")\n",
+        "importar getpass\n",
+        " authtoken = getpass.getpass() # ingresa tu token de autenticación de Ngrok cada vez que ejecutas la celda o simplemente reemplaza \"getpass.getpass()\" con tu token entre \"comillas dobles\"\n",
+        " ! ngrok authtoken $authtoken # inicie sesión en ngrok\n",
+        "\norte",
+        " # Establece la región ngrok predeterminada\n",
+        " conf.get_default().region = 'us' # Cambia esto a la región que quieras\n",
+        "\norte",
+        " # Conectarse a ngrok\n",
+        "url = ngrok.connect(25565, 'tcp')\n",
+        " print('La dirección de su servidor es ' + ((str(url).split('\"')[1::2])[0]).replace('tcp://', ​​''))\ norte",
+        "\norte",
+        " print('Iniciando servidor...')\n",
+        " !java $asignación_memoria $banderas_servidor -jar $nombre_jar nogui\n",
+        "\norte",
+        "elif Tunnel_service == \"playit\":\n",
+        " ! curl -SsL https://playit-cloud.github.io/ppa/key.gpg | sudo apt-key add -\n",
+        "! sudo curl -SsL -o /etc/apt/sources.list.d/playit-cloud.list https://playit-cloud.github.io/ppa/playit-cloud.list\n",
+        " ! sudo apt update &>/dev/null && sudo apt install playit &>/dev/null && echo \"Playit.gg instalado\" || echo \"Error al instalar playit\"\n",
+        " print('Iniciando servidor...')\n",
+        " ! playit & java $memory_allocation $server_flags -jar $jar_name nogui\n",
+        "\norte",
+        "de lo contrario:\n",
+        " # Descargar y convertir argo en ejecutable\n",
+        " !wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64\n",
+        " !chmod +x cloudflared-linux-amd64\n",
+        " print('Iniciando servidor...')\n",
+        " !./cloudflared-linux-amd64 túnel --url tcp://127.0.0.1:25565 & java $memory_allocation $server_flags -jar $jar_name nogui\n"
+      ]
+    },
+    {
+      "archivos adjuntos": {},
+      "cell_type": "rebaja",
+      "metadatos": {
+        "id": "_4IowSDVUZp8"
+      },
+      "fuente": [
+        "# Crear un servidor\n",
+        "\norte",
+        "El siguiente código descargará un servidor para usted y aceptará el EULA. Después de ejecutar estos scripts, su servidor estará listo para ejecutarse".
+      ]
+    },
+    {
+      "archivos adjuntos": {},
+      "cell_type": "rebaja",
+      "metadatos": {
+        "id": "7wrNfinQOlWV"
+      },
+      "fuente": [
+        "**Descargar el servidor de Minecraft**\n",
+        "\norte",
+        "El siguiente código descargará Paper, una bifurcación de alto rendimiento del servidor Vanilla.\n",
+        "Se pueden utilizar otras plataformas de servidor colocando server.jar en la carpeta Drive manualmente".
+      ]
+    },
+    {
+      "tipo_celda": "código",
+      "recuento_ejecución": nulo,
+      "metadatos": {
+        "id": "Fy5-YjJMPV3S"
+      },
+      "salidas": [],
+      "fuente": [
+        "# Reemplace \"1.19.2\" con la versión de servidor que desee.\n",
+        "# Versiones disponibles:\n",
+        "# - 1.19.2\n",
+        "# - 1.19.1\n",
+        "# - 1.19\n",
+        "# - 1.18.2\n",
+        "# - 1.18.1\n",
+        "# - 1.18\n",
+        "# - 1.17.1\n",
+        "# - 1.17\n",
+        "# - 1.16.4\n",
+        "# - 1.16.3\n",
+        "# - 1.15.2\n",
+        "# - 1.14.4\n",
+        "# - 1.13.2\n",
+        "# - 1.12.2\n",
+        "# - 1.11.2\n",
+        "# - 1.10.2\n",
+        "# - 1.9.4\n",
+        "# - 1.8.8\n",
+        "# Las versiones más nuevas podrían funcionar también, sin embargo, esto no está garantizado.\n",
+        "versión = '1.19.2'\n",
+        "forge_version = \"43.2.8\" # Si vas a utilizar forge \n",
+        "\norte",
+        "#Elige tipo de servidor. Versiones disponibles actualmente: tela, papel, forja\n",
+        "server_type = 'papel'\n",
+        "\norte",
+        "desde la unidad de importación google.colab\n",
+        "solicitudes de importación\n",
+        "importar json\n",
+        "\norte",
+        "\norte",
+        "drive.mount('/content/drive')\n",
+        "\norte",
+        "! mkdir \"/content/drive/Mi unidad/Minecraft-server\"\n",
+        "%cd \"/content/drive/Mi unidad/Minecraft-server\"\n",
+        "\norte",
+        "si tipo_servidor == \"papel\":\n",
+        " a = request.get(\"https://papermc.io/api/v2/projects/paper/versions/\" + versión)\n",
+        " b = request.get(\"https://papermc.io/api/v2/projects/paper/versions/\" + versión + \"/builds/\" + str(a.json()[\" compila\"][-1]))\n",
+        " print(\"https://papermc.io/api/v2/projects/paper/versions/\" + versión + \"/builds/\" + str(a.json()[\"builds\"] [-1]) + \"/descargas/\" + b.json()[\"descargas\"][\"aplicación\"][\"nombre\"])\n",
+        "\norte",
+        " url = \"https://papermc.io/api/v2/projects/paper/versions/\" + versión + \"/builds/\" + str(a.json()[\"builds\"] [-1]) + \"/descargas/\" + b.json()[\"descargas\"][\"aplicación\"][\"nombre\"]\n",
+        "\norte",
+        " nombre_jar = \"servidor.jar\"\n",
+        "print('Descargando a Google Drive...')\n",
+        "elif server_type == \"fabric\":\n",
+        " url = \"https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.7.4/fabric-installer-0.7.4.jar\"\n",
+        " nombre_jar = \"fabric-installer.jar\"\n",
+        "elif server_type == \"forge\":\n",
+        " url = f\"https://maven.minecraftforge.net/net/minecraftforge/forge/{version}-{forge_version}/forge-{version}-{forge_version}-installer.jar\"\n",
+        " nombre_jar = \"servidor.jar\"\n",
+        "\norte",
+        "\norte",
+        "r = solicitudes.get(url)\n",
+        "\norte",
+        "si r.status_code es 200:\n",
+        "con open('/content/drive/My Drive/Minecraft-server/' + jar_name, 'wb') como f:\n",
+        " f.escribir(r.contenido)\n",
+        "de lo contrario:\n",
+        " print('Error '+ str(r.status_code) + '! Lo más probable es que haya ingresado una versión no compatible. Intente ejecutar el código nuevamente si cree que eso no debería haber sucedido.')\n",
+        "\norte",
+        "# Ejecutando una ruta de instalación específica.\n",
+        "si tipo_servidor == \"fabric\":\n",
+        " !java -jar fabric-installer.jar servidor -mcversion $versión -descargarMinecraft\n",
+        "elif server_type == \"forge\":\n",
+        " !java -jar server.jar --installServer\n",
+        "\norte",
+        "colabconfig = {\"tipo_servidor\": tipo_servidor}\n",
+        "json.dump(colabconfig, open(\"colabconfig.json\",'w'))\n",
+        "\norte",
+        "imprimir('¡Listo!')\n"
+      ]
+    },
+    {
+      "archivos adjuntos": {},
+      "cell_type": "rebaja",
+      "metadatos": {
+        "id": "vhHYrg6FlbcQ"
+      },
+      "fuente": [
+        "**Acepta automáticamente el EULA**"
+      ]
+    },
+    {
+      "tipo_celda": "código",
+      "recuento_ejecución": nulo,
+      "metadatos": {
+        "id": "aefCB6cFlle8"
+      },
+      "salidas": [],
+      "fuente": [
+        "# Lea el archivo almacenado en la carpeta de su servidor antes de ejecutar este comando. \n",
+        "# Además, vaya a https://www.minecraft.net/en-us/eula para leer el CLUF de Minecraft.\n",
+        "\norte",
+        "#Asegúrate de que Drive esté montado\n",
+        "desde la unidad de importación google.colab\n",
+        "drive.mount('/content/drive')\n",
+        "\norte",
+        "%cd \"/content/drive/Mi unidad/Minecraft-server\"\n",
+        "!echo \"eula=true\" >> eula.txt"
+      ]
+    },
+    {
+      "archivos adjuntos": {},
+      "cell_type": "rebaja",
+      "metadatos": {
+        "id": "FO5S4OHVdV5O"
+      },
+      "fuente": [
+        "# Depurar\n",
+        "Acceso SSH al sistema operativo host: gracias a [colab-ssh](https://github.com/WassimBenzarti/colab-ssh).\n",
+        "\norte",
+        "<p style=\"color:red;\">PODRÍAS SER PROHIBIDO</p>"
+      ]
+    },
+    {
+      "tipo_celda": "código",
+      "recuento_ejecución": nulo,
+      "metadatos": {
+        "identificación": "cM7gKp6Yi8Q2"
+      },
+      "salidas": [],
+      "fuente": [
+        "#@title Túnel Colab-ssh\n",
+        "#@markdown Ejecute esta celda para abrir el túnel ssh. Consulte la [documentación de colab-ssh](https://github.com/WassimBenzarti/colab-ssh) para obtener más detalles.\n",
+        "\norte",
+        "# Instalar colab_ssh en google colab\n",
+        "!pip install colab_ssh --upgrade\n",
+        "\norte",
+        "desde colab_ssh importa launch_ssh_cloudflared, init_git_cloudflared\n",
+        "ssh_tunnel_password = \"<PUT_YOUR_PASSWORD_HERE>\" #@param {tipo: \"cadena\"}\n",
+        "launch_ssh_cloudflared(contraseña=ssh_tunnel_password)"
+      ]
+    },
+    {
+      "tipo_celda": "código",
+      "recuento_ejecución": nulo,
+      "metadatos": {
+        "id": "7kR6rsn7jyxt"
+      },
+      "salidas": [],
+      "fuente": [
+        "#Obtener dirección pública (ngrok)\n",
+        "! curl -s http://localhost:4040/api/tunnels | python3 -c \\\n",
+        " \"importar sistema, json; print(json.load(sys.stdin)['túneles'][0]['public_url'])\""
+      ]
+    },
+    {
+      "tipo_celda": "código",
+      "recuento_ejecución": nulo,
+      "metadatos": {
+        "id": "Z2rztsCQk0kh"
+      },
+      "salidas": [],
+      "fuente": [
+        "## Para inspeccionar el directorio del servidor de Minecraft ##\n",
+        "%cd \"/content/drive/Mi unidad/Minecraft-server\"\n",
+        "!ls\n"
+      ]
+    }
+  ],
+  "metadatos": {
+    "colaboración": {
+      "secciones_colapsadas": [],
+      "nombre": "MineColab",
+      "procedencia": []
+    },
+    "especificación del núcleo": {
+      "display_name": "Python 3 (ipykernel)",
+      "idioma": "pitón",
+      "nombre": "python3"
+    },
+    "información_idioma": {
+      "codemirror_mode": {
+        "nombre": "ipython",
+        "versión": 3
+      },
+      "extensión_archivo": ".py",
+      "mimetype": "texto/x-python",
+      "nombre": "pitón",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "versión": "3.10.4"
+    }
+  },
+  "nbformato": 4,
+  "nbformat_minor": 0
+}
